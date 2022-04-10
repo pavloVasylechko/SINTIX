@@ -8,8 +8,8 @@ $('.banner__slider').slick({
   cssEase: 'linear',
   arrows: true,
   appendArrows:'.banner__slider-arrows',
-  prevArrow:'<img class="slick-prev slick-arrow banner__items-arrows" src="../images/icons/arrow_left.png" alt="">',
-  nextArrow:'<img class="slick-next slick-arrow banner__items-arrows" src="../images/icons/arrow_right.png" alt="">'
+  prevArrow:'<img class="slick-prev slick-arrow banner__items-arrows" src="./images/icons/arrow_left.png" alt="">',
+  nextArrow:'<img class="slick-next slick-arrow banner__items-arrows" src="./images/icons/arrow_right.png" alt="">'
 });
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -38,8 +38,8 @@ $('.reviews__items').slick({
   fade: true,
   cssEase: 'linear',
   asNavFor: '.reviews__people',
-  prevArrow:'<img class="slick-prev slick-arrow reviews__items-arrows" src="../images/icons/arrow_left.png" alt="">',
-  nextArrow:'<img class="slick-next slick-arrow reviews__items-arrows" src="../images/icons/arrow_right.png" alt="">',
+  prevArrow:'<img class="slick-prev slick-arrow reviews__items-arrows" src="./images/icons/arrow_left.png" alt="">',
+  nextArrow:'<img class="slick-next slick-arrow reviews__items-arrows" src="./images/icons/arrow_right.png" alt="">',
   responsive:[
     {
       breakpoint: 778,
@@ -68,8 +68,8 @@ $('.recommendation__item-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  prevArrow:'<img class="slick-prev slick-arrow recommendation__item-arrows" src="../images/icons/arrow_left.png" alt="">',
-  nextArrow:'<img class="slick-next slick-arrow recommendation__item-arrows" src="../images/icons/arrow_right.png" alt="">'
+  prevArrow:'<img class="slick-prev slick-arrow recommendation__item-arrows" src="./images/icons/arrow_left.png" alt="">',
+  nextArrow:'<img class="slick-next slick-arrow recommendation__item-arrows" src="./images/icons/arrow_right.png" alt="">'
 });
 
 // ---------------------------------------------------------------------------------------------------------------
