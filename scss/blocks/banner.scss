@@ -1,0 +1,74 @@
+.banner{
+    position: relative;
+    &::after{
+        position: absolute;
+        content:'';
+        height: 74px;
+        width: 100%;
+        bottom: -1px;
+        left: 0;
+        background-image: url('../../images/bg-decor-top.png');
+    }
+    &__slider-item{
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &__slider-arrows{
+        z-index: 33;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 90px;
+        text-align: end;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    &__items-arrows{
+        cursor: pointer;
+    }
+    .slick-prev{
+        transform: translateX(-10px);
+    }
+    &__slider-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__inner{
+        padding-top: 367px;
+        padding-bottom: 70px;
+    }
+    &__slider-title{
+        
+        font-size: 100px;
+        line-height: 120px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: $titleColor;
+        max-width: 666px;
+        margin-bottom: 60px;
+        user-select: text;
+    }
+    &__slider-btn{
+        padding: 25px 50px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+        background-color: #ff7a21;
+        box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.2);
+        transition: all .5s ease;
+        &:hover{
+            color:#ff7a21;
+            background-color:#ffffff;
+        }
+    }
+}

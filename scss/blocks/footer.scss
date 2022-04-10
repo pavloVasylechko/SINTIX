@@ -1,0 +1,169 @@
+.footer{
+    padding: 120px 0px 0px;
+    &__inner{
+        display: flex;
+        margin-bottom: 122px;
+    }
+    &__item{
+        &:first-child{
+            margin-right: 117px;
+        }
+        &:nth-child(2){
+            margin-right: 136px;
+            width: 162px;
+        }
+        &:nth-child(3){
+            margin-right: 129px;
+            width: 120px;
+        }
+        &:nth-child(3){
+            width: 200px;
+        }
+    }
+    &__title{
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+        margin-bottom: 45px;
+    }
+    &__text{
+        max-width: 365px;
+        margin-bottom: 40px;
+    }
+    &__form{
+        position: relative;
+    }
+    &__input{
+        width: 370px;
+        height: 75px;
+        background-color: #000000;
+        border: 1px solid rgba(255,255,255,0.07);
+        font-family: "Oswald", sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+        color: #717389;
+        padding: 31px 82px 31px 39px;
+        &::placeholder{
+            font-family: "Oswald", sans-serif;
+            font-size: 15px;
+            line-height: 30px;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            color: #717389;
+        }
+    }
+    &__btn{
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        border:none;
+        background-color:inherit;
+        cursor: pointer;
+
+    }
+    &__btn-icon{
+        color:#fff;
+        font-size: 22px;
+        transition: color .5s ease;
+        &:hover{
+            color: $hoverColor;
+        }
+    }
+    &__list-item{
+        margin-bottom: 22px;
+        padding-left: 20px;
+        position: relative;
+        &::after{
+            content:"";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            background-color:$hoverColor;
+            border-radius: 50%;
+        }
+    }
+    &__list-link{
+        font-size: 15px;
+        transition: color .5s ease;
+        &:hover{
+            color:#fff;
+        }
+    }
+    &__contact-title{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    &__contact-link{
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+        margin-bottom: 45px;
+        display: inline-block;
+        transition: color .5s ease;
+        &:hover{
+            color:$hoverColor;
+        }
+    }
+    &__copyrights{
+        padding: 41px 65px;
+        background-color:#090a14;
+        display: flex;
+        justify-content: space-between;
+        clip-path: polygon(2% 0, 98% 0, 100% 100%, 0% 100%);
+    }
+    &__copyrights-text{
+        padding-left: 38px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content:'';
+            width: 24px;
+            height: 23px;
+            background-image:url('../../images/icons/copyrights_icon.png');
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__copyrights-list{
+        display: flex;
+    }
+    &__copyrights-item{
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+    }
+    &__copyrights-item{
+        i{
+            transition: color .5s ease;
+        }
+        &:hover{
+            i{
+                color:$hoverColor;
+            }
+        }
+        position: relative;
+        z-index: 3;
+        &::after{
+            content:'';
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255,255,255,0.07);
+            background-color:$black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            border-radius: 50%;
+        }
+    }
+}

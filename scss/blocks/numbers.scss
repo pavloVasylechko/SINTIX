@@ -1,0 +1,48 @@
+.numbers{
+    padding: 60px 0px 120px;
+    background-color:$secondBgColor;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content:'';
+        height: 350px;
+        width: 100%;
+        background-image:url('../../images/numbers__bg.webp');
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0px;
+        left: 0;
+        z-index: -1;
+        opacity: 0.07;
+        -webkit-box-shadow: -5px -5px 100px 97px rgba(13, 14, 27, 1) inset;
+-moz-box-shadow: -5px -5px 100px 97px rgba(13, 14, 27, 1) inset;
+box-shadow: -5px -5px 100px 97px rgba(13, 14, 27, 1) inset;
+    }
+    &__title{
+        margin-bottom: 60px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__quantity{
+        font-size: 80px;
+        line-height: 50px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color:#ff7a21;
+        display: inline-block;
+        margin-bottom: 35px;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        line-height: 50px;
+    }
+}

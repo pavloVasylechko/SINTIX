@@ -1,0 +1,102 @@
+.blog{
+    padding: 60px 0px 160px;
+    background-color:$secondBgColor;
+    position: relative;
+    &::after{
+        position: absolute;
+        content:'';
+        height: 74px;
+        width: 100%;
+        bottom: -1px;
+        left: 0;
+        background-image: url('../../images/bg-decor-bottom.png');
+    }
+    // &::before{
+    //     position: absolute;
+    //     content:'';
+    //     height: 74px;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     background-image: url('../../images/bg_top_dark.png');
+    // }
+    &__title{
+        margin-bottom: 50px;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 30px;
+    }
+    &__item{
+        position: relative;
+        box-shadow: 0px 15px 40px 0px rgba(0,0,0,0.5);
+        &:hover{
+            .blog__item-link{
+                &::after{
+                    opacity: 1;
+                    transition: all 0.6s ease;
+                }
+            }
+        }
+    }
+    &__item-link{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        &::after{
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: .6);
+            left: 0;
+            right: 0;
+            border: 0;
+            top: 0;
+            opacity: 0;
+            transition: all 0.6s ease;
+        }
+    }
+    &__item-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__item-content{
+        position: absolute;
+        left: 60px;
+        bottom: 60px;
+    }
+    &__item-data{
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+        display: inline-block;
+        margin-bottom: 26px;
+        padding: 9px 15px;
+        background-color: #ff7a21;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+        transition: background-color 0.5s ease;
+        &:hover{
+            background-color:#db691d;
+        }
+    }
+    &__item-title{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+        display: block;
+        max-width: 300px;
+        transition: color 0.5s ease;
+        &:hover{
+            color:#ff7a21;
+        }
+    }
+}
